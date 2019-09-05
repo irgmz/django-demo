@@ -54,10 +54,10 @@ MIDDLEWARE = [
 
 ROLLBAR = {
     'access_token': 'e3211e5f9042453497de0f363739b770',
-    'environment': 'staging',
+    'environment': 'production',
     'branch': 'master',
     'root': '/Users/ajtran/Support/django-app/',
-    'code_version': '00cfd0cac6a0d75f1fe8ad31741ad3cd88015fda',  # MRU COMMIT
+    'code_version': 'e7e3a4caeb64087fa8d4dc192cbd7a35d15cc109',  # MRU COMMIT
 }
 
 ROOT_URLCONF = 'demo.urls'
