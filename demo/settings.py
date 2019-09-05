@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +54,7 @@ MIDDLEWARE = [
 
 ROLLBAR = {
     'access_token': 'e3211e5f9042453497de0f363739b770',
-    'environment': 'development',
+    'environment': 'production',
     'branch': 'master',
     'root': '/Users/ajtran/Support/django-app/',
     'code_version': '1.0.1',

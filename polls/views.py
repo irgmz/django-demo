@@ -6,9 +6,9 @@ from django.shortcuts import render
 # Create your views here.
 
 import time
-from datetime import date, datetime
+from datetime import datetime
 
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseBadRequest
 
 TWENTY_ONE_YEARS_TS = 21 * 365 * 24 * 60 * 60
 
@@ -18,13 +18,15 @@ def index(request):
     if not birthdate:
         return HttpResponse('Please add your birthdate in the query string.')
 
-    message = ' '.join(['Today\'s date:', str(date.today())])
+    birthdate_ts = int(time.mktime(datetime.strptime(birthdate, 'YYYY-MM-DD').timetuple()))
 
     now = int(time.time())
-    birthdate_ts = int(time.mktime(datetime.strptime(birthdate, '%m-%d-%Y').timetuple()))
-
     if (now - birthdate_ts) >= TWENTY_ONE_YEARS_TS:
-        return HttpResponse(' '.join([message, '- Welcome Adult!']))
+        return HttpResponse(
+            '<h1 style="background-color:lightgreen;">Welcome Adult!</h1>'
+        )
 
     else:
-        return HttpResponse(' '.join([message, '- GTFO here child.']))
+        return HttpResponse(
+            '<h1 style="background-color:red; color:white">redirect <a href=https://google.com/>away</a></h1>'
+        )
