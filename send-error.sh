@@ -3,6 +3,9 @@
 while true; do
     let "SECS = $RANDOM % 5"
     sleep $SECS
-    curl http://127.0.0.1:8000/age_verification/\?birthdate\=$RANDOM-09-05
+    let "DAY = $RANDOM % 32"
+    let "MONTH = $RANDOM % 13"
+    let "YEAR = $RANDOM % 110 + 1900"
+    curl http://127.0.0.1:8000/age_verification/\?birthdate\=$MONTH-$DAY-$YEAR
     echo
 done

@@ -20,20 +20,12 @@ def index(request):
             'Please add your birthdate in the query string.'
         )
 
-    try:
-        birthdate_ts = int(time.mktime(datetime.strptime(birthdate, 'YYYY-MM-DD').timetuple()))
-    except ValueError:
-        return HttpResponseBadRequest(
-            'Please format the birthdate in ISOFORMAT'
-        )
+    birthdate_ts = int(time.mktime(datetime.strptime(birthdate, 'YYYY-MM-DD').timetuple()))
 
     now = int(time.time())
     if (now - birthdate_ts) >= TWENTY_ONE_YEARS_TS:
-        return HttpResponse(
-            '<h1 style="background-color:lightgreen;">Welcome Adult!</h1>'
-        )
-
+        # do something
+        pass
     else:
-        return HttpResponse(
-            '<h1 style="background-color:red; color:white">redirect <a href=https://google.com/>away</a></h1>'
-        )
+        # do something else
+        pass

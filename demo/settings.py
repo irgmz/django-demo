@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROLLBAR = {
-    'access_token': 'e3211e5f9042453497de0f363739b770',
+    'access_token': 'aa62403d7a154b6e88d084617aa30d10',
     'environment': 'production',
     'branch': 'master',
     'root': '/Users/ajtran/Support/django-app/',

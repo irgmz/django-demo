@@ -11,7 +11,7 @@ git push
 
 REV=$(git rev-parse HEAD)
 
-DATA='{"access_token":"e3211e5f9042453497de0f363739b770","environment":"'$ENV'","revision":"'$REV'","rollbar_username":"ajtran","local_username":"ajtran"}'
+DATA='{"access_token":"aa62403d7a154b6e88d084617aa30d10","environment":"'$ENV'","revision":"'$REV'","rollbar_username":"ajtran","local_username":"ajtran"}'
 
 curl \
     --request POST \
