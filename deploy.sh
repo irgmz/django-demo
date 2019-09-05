@@ -1,5 +1,5 @@
 git add .
-git commit -m "fix rb#13"
+git commit -m "fix rb#11"
 git push
 
 REVISION=$(git rev-parse HEAD)
