@@ -20,6 +20,5 @@ curl \
     --data $DATA
 
 echo
-echo
-echo
+echo "Deployed commit(s)"
 echo $REV
