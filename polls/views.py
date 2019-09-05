@@ -20,7 +20,7 @@ def index(request):
             'Please add your birthdate in the query string.'
         )
 
-    birthdate_ts = int(time.mktime(datetime.strptime(birthdate, 'YYYY-MM-DD').timetuple()))
+    birthdate_ts = int(time.mktime(datetime.strptime(birthdate, '%Y-%m-%d').timetuple()))
 
     now = int(time.time())
     if (now - birthdate_ts) >= TWENTY_ONE_YEARS_TS:

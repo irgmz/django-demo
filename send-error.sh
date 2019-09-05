@@ -1,7 +1,8 @@
 #!/bin/bash
 
+sleep 10
 while true; do
-    let "SECS = $RANDOM % 5"
+    let "SECS = $RANDOM % 2"
     sleep $SECS
     let "DAY = $RANDOM % 32"
     let "MONTH = $RANDOM % 13"
