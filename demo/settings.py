@@ -57,7 +57,7 @@ ROLLBAR = {
     'environment': 'development',
     'branch': 'master',
     'root': '/Users/ajtran/Support/django-app/',
-    'code_version': '0649f296ff7e62bb95f5e3c15d42ede402e860bd',  # MRU COMMIT
+    'code_version': 'aef35080e0a3a8ff1505a5f1ebca2afc898c0207',  # MRU COMMIT
 }
 
 ROOT_URLCONF = 'demo.urls'

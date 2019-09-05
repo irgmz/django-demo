@@ -19,4 +19,7 @@ curl \
     --header 'content-type: application/json' \
     --data $DATA
 
+echo
+echo
+echo
 echo $REV
