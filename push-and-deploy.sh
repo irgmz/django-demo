@@ -20,5 +20,9 @@ curl \
     --data $DATA
 
 echo
-echo "Deployed commit(s)"
-echo $REV
+echo
+echo "."
+echo "."
+echo "Deployed to $ENV"
+echo
+echo "Latest Git SHA: $REV"
