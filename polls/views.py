@@ -24,8 +24,6 @@ def index(request):
 
     now = int(time.time())
     if (now - birthdate_ts) >= TWENTY_ONE_YEARS_TS:
-        # do something
-        pass
+        return HttpResponse('Congratulations! You are verified')
     else:
-        # do something else
-        pass
+        return HttpResponse('I\'m sorry. You are not over 21 years of age')
