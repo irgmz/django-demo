@@ -4,7 +4,13 @@ git push
 
 REVISION=$(git rev-parse HEAD)
 
-DATA='{"access_token":"e3211e5f9042453497de0f363739b770","environment":"development","revision":"REV"}'
+DATA='{
+    "access_token":"e3211e5f9042453497de0f363739b770",
+    "environment":"development",
+    "revision":"REV"
+    "rollbar_username":"ajtran",
+    "local_username":"ajtran"
+}'
 
 FINAL="${DATA/REV/$REVISION}"
 
