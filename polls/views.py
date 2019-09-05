@@ -16,7 +16,7 @@ def index(request):
     birthdate = request.GET.get('birthdate')
 
     if not birthdate:
-        return HttpResponse('Please add your birthdate in the query string as ?birthdate=MM-DD-YYYY')
+        return HttpResponse('Please add your birthdate in the query string.')
 
     message = ' '.join(['Today\'s date:', str(date.today())])
 
