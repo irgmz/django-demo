@@ -20,10 +20,10 @@ def index(request):
             'Please add your birthdate in the query string.'
         )
 
-    try:
-        birthdate_ts = int(time.mktime(datetime.strptime(birthdate, '%Y-%m-%d').timetuple()))
-    except ValueError:
-        return HttpResponseBadRequest('Please format birthdate in isoformat')
+    # try:
+    birthdate_ts = int(time.mktime(datetime.strptime(birthdate, '%Y-%m-%d').timetuple()))
+    # except ValueError:
+        # return HttpResponseBadRequest('Please format birthdate in isoformat')
 
     now = int(time.time())
     if (now - birthdate_ts) >= TWENTY_ONE_YEARS_TS:

@@ -53,10 +53,10 @@ MIDDLEWARE = [
 ]
 
 ROLLBAR = {
-    'access_token': 'aa62403d7a154b6e88d084617aa30d10',
+    'access_token': 'f8c3e2173dfb45adad17057efff78453',
     'environment': 'production',
     'branch': 'master',
-    'root': '/Users/ajtran/Support/django-app/',
+    'root': '/Users/ivangomez/CodeTemp/newage/',
     'code_version': '6dda80b6bc16cc2f8b8ff3a66dd9607216dac1f7',  # MRU COMMIT
 }
 
