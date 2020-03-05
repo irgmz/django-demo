@@ -13,3 +13,7 @@ pip install django==1.11.24
 pip install rollbar
 
 python manage.py runserver
+
+age_verification/?birthdate=
+
+sh send-error.sh
