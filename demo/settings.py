@@ -56,7 +56,7 @@ ROLLBAR = {
     'access_token': 'f8c3e2173dfb45adad17057efff78453',
     'environment': 'production',
     'branch': 'master',
-    'root': '/Users/ivangomez/CodeTemp/newage/',
+    'root': '/Users/ivangomez/CodeTemp/demo/',
     'code_version': '6dda80b6bc16cc2f8b8ff3a66dd9607216dac1f7',  # MRU COMMIT
 }
 
