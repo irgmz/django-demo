@@ -14,6 +14,8 @@ pip install rollbar
 
 python manage.py runserver
 
+---
+
 Then enter the following at the end of your URL:
 
 age_verification/?birthdate=
@@ -22,6 +24,7 @@ Enter birthday in ISO format to see verification working. For example: age_verif
 
 Enter birthday in any other format to send error. For example: age_verification/?birthdate=04051990
 
+---
 
 To send several errors:
 sh send-error.sh
