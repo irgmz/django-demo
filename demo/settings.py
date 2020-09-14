@@ -53,11 +53,11 @@ MIDDLEWARE = [
 ]
 
 ROLLBAR = {
-    'access_token': 'f8c3e2173dfb45adad17057efff78453',
-    'environment': 'production',
+    'access_token': 'access_token', # Use post_server_item access token for server-side languages
+    'environment': 'production', 
     'branch': 'master',
-    'root': '/Users/ivangomez/CodeTemp/demo/',
-    'code_version': '6dda80b6bc16cc2f8b8ff3a66dd9607216dac1f7',  # MRU COMMIT
+    'root': '/absolute/path/to/code/root', # e.g. /Users/ivan/CodeTemp/django-demo/
+    'code_version': 'code_version',  # A string describing the current code revision/version (i.e. a git sha). Max 40 characters.
 }
 
 ROOT_URLCONF = 'demo.urls'
